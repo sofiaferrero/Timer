@@ -1,0 +1,176 @@
+:root {
+    --background-color: #262626;
+    --text-color: white;
+    --green1:#038C73;
+    --green2: #025949;
+    --green3:#11403B;
+    --grey:#8C8C8C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--background-color);
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+li {
+    list-style: none;
+}
+
+.invisible {
+    display: none;
+}
+
+header {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+.header--list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.header--button {
+    width: 200px;
+    height: 50px;
+    border: 1px solid var(--green1);
+    background-color: transparent;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.header--button:hover {
+    background-color: var(--green1);
+    cursor: pointer;
+}
+
+main {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    height: 320px;
+    text-align: center;
+    border: 5px solid var(--green2);
+    border-radius: 50%;
+}
+
+.clock-container {
+    text-align: center;
+}
+
+.button-clock {
+    margin-top: 20px;
+    border: none;
+    width: 80px;
+    height: 80px;
+    color: var(--green2);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.fa-clock {
+    width: 30px;
+    height: 30px;
+}
+
+#clockdate {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.clockdate-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+#clock, #date {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2rem;
+
+}
+
+.hero--title {
+    font-size: 3rem;
+}
+
+.hero--time {
+    font-size: 2rem;
+}
+
+.hero--button {
+    border-radius: 10px;
+    padding: 8px;
+    background-color: var(--green3);
+    color: var(--text-color);
+    margin-top: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.hero--button:hover {
+    background-color: var(--green2);
+}
+
+.timer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.timer-form input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}
+
+.timer-form button {
+    margin-top: 10px;
+}
+@media (min-width: 1024px){
+    .header--list {
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .header--list li {
+        margin: 0 20px;
+    }
+}

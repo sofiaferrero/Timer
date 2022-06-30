@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1db2702c51.js" crossorigin="anonymous"></script>
+</head>
+<body onload="startClock()">
+    <header>
+        <nav class="header--nav">
+          <ul class="header--list">
+            <li>
+              <button class="button header--button" id="chronometer-button" 
+                title="Chronometer"><i class="fa-solid fa-stopwatch"></i></button>
+            </li>
+            <li>
+              <button class="button header--button " id="timer-button" title="Timer"><i
+                  class="fa-solid fa-hourglass"></i></button>
+            </li>
+            <li>
+              <button class="button header--button" id="alarm-button" title="Alarms"><i
+                  class="fa-solid fa-bell"></i></button>
+            </li>
+          </ul>
+        </nav>
+        <div class="clock-container">
+          <button class="button-clock" id="clock-button" title="Inicio" ><i class="fa-solid fa-clock"></i></button>
+        </div>
+      </header>
+      <main>
+        <section class="hero" id="principal">
+          <div id="clockdate">
+            <div class="clockdate-wrapper" id="clockdate-wrapper">
+              <div id="clock"></div>
+              <div id="date"></div>
+            </div>
+          </div>
+          <h1 class="hero--title" id="hero--title">Chronometer</h1>
+          <div class="hero--time" id="hero--time">
+            <p id="time"><span id="minutes">00</span>:<span id="seconds">00</span></p>
+          </div>
+          <div class="hero--buttons" id="hero--buttons">
+            <button class="button hero--button" type="button">Start</button>
+            <button class="button hero--button" type="button">Stop</button>
+            <button class="button hero--button" type="button">Reset</button>
+          </div>
+        </section>
+      </main>
+      <script src="./src/selectores.js"></script>
+      <script src="./src/navegación.js"></script>
+      <script src="./src/index.js"></script>
+</body>
+</html>
